@@ -1,0 +1,76 @@
+July 12, 2017
+v2.0.1
+In functions postM and postM.ab called with prior = 'uniform', the prior was
+incorrectly imputed to be proportional to 0:mmax in v2.0. The prior is now
+correctly imputed to be proportional to 1 in v2.0.1. The error was relevant only
+when postM or postM.ab was (1) called from the command line in R, and (2) the
+default option for the prior ('IbinRef') was manually overridden to 'uniform' by
+the user.
+
+July 17, 2017
+v2.0.2
+The routine for simulating Weibull, lognormal, and log-logistic persistence
+distributions has been updated to improve estimation of the variance of the beta
+parameter. The change will have negligible effect on estimates of g, M, or
+lambda. However, the updated version is more stable when estimating detection
+probabilities when persistence times are very long.
+
+An error in the calculation of lognormal persistence distributions has been
+corrected. The change will have negligible effect except when estimating g when
+persistence times are very long relative to search intervals and a lognormal
+persistence model is used, in which case earlier versions of the software would
+sometimes crash, but the updated version will not.
+
+In previous versions, the "span" label for custom search schedule in the Single
+Class module would sometimes improperly be in "normal" state (black color) when
+the "formula" option was selected. In the updated version, the label is
+consistently put in "disabled" state (grayed out) when the "formula" option is
+selected. The change does not affect any calculations or results.
+
+
+July 18, 2017
+v2.0.3
+The routine for simulating Weibull, lognormal, and log-logistic persistence
+distributions has been refined to more reliably model carcass persistence when
+all (or nearly all) field trial carcasses persisted beyond the duration of
+the field trials. The change will have no effect on results except in certain
+unusual scenarios when previous versions of the software would occasionally
+crash when persistence times extended well beyond the end of the field trials.
+
+In the form for importing and analyzing carcass persistence data (submodule of
+Single Class module), a meaningless error message was erroneously generated upon
+clicking the table with summary statistics of persistence models. In v2.0.3,
+that error message no longer appears.
+
+December 4, 2017
+v2.0.4
+The label for M* on the figures showing simulation results in the scenario 
+explorer has been modified to show the alpha value for which M* was calculated. 
+Also, the array of raw simulation results from the scenario explorer can now
+be accessed from the command line via getData('res'). 
+
+February 5, 2018
+v2.0.5
+"Error in quantile(rr, probs = c(0.025, 0.975)): object 'rr' not found." This 
+data retrieval error in the analysis of carcass persistence data in the single
+class module caused the program to crash in some scenarios but has now been
+corrected. 
+
+February 7, 2018
+v2.0.6
+A more reliable algorithm for displaying EoA version number in window titles
+has been adopted.
+
+In previous versions, an error in the processing of carcass persistence data 
+caused slight inaccuracy in fitted persistence functions when a large fraction
+of carcasses are scavenged before the first carcass check. The error has been
+corrected. It is unlikely that the change will cause any noticeable differences
+between fitted persistence distributions parameters, estimated detection 
+probabilities, or mortality estimates between v2.0.6 and earlier versions. 
+
+February 7, 2019
+v2.0.7
+In previous versions, the button to "Estmate overall detection probability (g)"
+in the multiple class module would properly create a graphical summary of 
+results but fail to write a tabular summary, returning an error "object 'g' 
+not found" instead. That error has been corrected.
