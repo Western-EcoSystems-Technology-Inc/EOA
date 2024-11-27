@@ -1,0 +1,19 @@
+
+SAMPLING FOR MODEL 'd6b463742c1c8430a4d49081817c20fc' NOW (CHAIN 1).
+
+Chain 1, Iteration:    1 / 1565 [  0%]  (Warmup)
+Chain 1, Iteration:  101 / 1565 [  6%]  (Sampling)
+Chain 1, Iteration:  256 / 1565 [ 16%]  (Sampling)
+Chain 1, Iteration:  412 / 1565 [ 26%]  (Sampling)
+Chain 1, Iteration:  568 / 1565 [ 36%]  (Sampling)
+Chain 1, Iteration:  724 / 1565 [ 46%]  (Sampling)
+Chain 1, Iteration:  880 / 1565 [ 56%]  (Sampling)
+Chain 1, Iteration: 1036 / 1565 [ 66%]  (Sampling)
+Chain 1, Iteration: 1192 / 1565 [ 76%]  (Sampling)
+Chain 1, Iteration: 1348 / 1565 [ 86%]  (Sampling)
+Chain 1, Iteration: 1504 / 1565 [ 96%]  (Sampling)
+Chain 1, Iteration: 1565 / 1565 [100%]  (Sampling)# 
+#  Elapsed Time: 0 seconds (Warm-up)
+#                0.062 seconds (Sampling)
+#                0.062 seconds (Total)
+# 

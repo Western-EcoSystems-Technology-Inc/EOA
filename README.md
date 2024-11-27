@@ -1,2 +1,7 @@
 # eoa
-R package for estimating bird and bat fatalities at wind farms and for designing search protocols. 
+
+
+# eoa
+
+also available from usgs here:
+https://pubs.usgs.gov/publication/ds1055

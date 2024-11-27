@@ -1,0 +1,51 @@
+Package: eoa
+Title: Wildlife mortality estimator for scenarios with low fatality rates
+    and imperfect detection
+Version: 2.1.0
+Date: 2024-11-21
+Authors@R: 
+    person("Daniel", "Dalthorp", , "ddalthorp@usgs.gov", role = c("aut", "cre"))
+Author: Daniel Dalthorp [aut, cre]
+Maintainer: Daniel Dalthorp <ddalthorp@usgs.gov>
+Description: Evidence of Absence software (EoA) is a user-friendly
+    application for estimating bird and bat fatalities at wind farms and
+    designing search protocols. The software is particularly useful in
+    addressing whether the number of fatalities has exceeded a given
+    threshold and what search parameters are needed to give assurance that
+    thresholds were not exceeded. The software is applicable even when
+    zero carcasses have been found in searches.
+License: GPL-2
+Depends: 
+    R (>= 3.3.0),
+    R6,
+    tcltk,
+    tcltk2
+Imports: 
+    actuar,
+    gsl,
+    MASS,
+    Matrix,
+    matrixStats,
+    rjags,
+    survival,
+    tensorA,
+    tkrplot,
+    VGAM
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2020-08-18 19:07:26 UTC; ddalt
+Collate: 
+    'initsF.R'
+    'utilities.R'
+    'ppersist.R'
+    'syFunc.R'
+    'syForm.R'
+    'scexFunc.R'
+    'scexForm.R'
+    'dtFunc.R'
+    'dtForm.R'
+    'myFunc.R'
+    'myForm.R'
+    'symcForm.R'
+RoxygenNote: 7.3.1
